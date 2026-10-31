@@ -11,4 +11,23 @@ A research and engineering workspace for authorized Android runtime observation,
 - Build and device validation: not yet established
 - Reverse-engineering claims: explicitly classified as observed, inferred, or unverified
 
-See the migration branch for the full project archive and evidence ledger.
+See this migration branch for the full project archive and evidence ledger.
+
+
+## Recovery documentation
+
+- [Project overview](docs/project-overview.md)
+- [Architecture](docs/architecture.md)
+- [Technical decisions](docs/technical-decisions.md)
+- [Project timeline](docs/PROJECT_TIMELINE.md)
+- [Conversation archive](docs/conversation-archive/README.md)
+- [Reverse engineering](docs/STATIC_REVERSE_ENGINEERING_REPORT.md)
+- [Hook coverage](docs/HOOK_COVERAGE.md)
+- [Local Agent/API design](docs/agent-api/README.md)
+- [Nexus research](docs/nexus-research/README.md)
+- [Compatibility matrix](docs/compatibility/README.md)
+- [Build and deployment](docs/build-and-deployment.md)
+- [Build report](docs/BUILD_REPORT.md)
+- [Test report](docs/TEST_REPORT.md)
+- [Known issues](docs/known-issues.md)
+- [Input artifact hashes](artifacts/manifests/INPUT_ARTIFACTS.sha256)
