@@ -12,3 +12,8 @@ Date: 2026-10-31. Source baseline recovered from qingjian0/LSP-Deekseep- main hi
 | LSPosed activation | Not run | No LSPosed log |
 
 A future successful build record must include workflow URL/run ID, commit SHA, runner image, Java/Gradle/SDK versions, command, exit code, artifact ID, APK SHA-256 and apksigner output.
+
+
+## CI trigger note
+
+The base branch contains the pull-request workflow definition so GitHub can evaluate this PR. The workflow is configured to build pushes to the migration branch and pull requests targeting main. The result remains pending until an actual workflow run is observed.
