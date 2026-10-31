@@ -35,3 +35,14 @@ The base branch contains the pull-request workflow definition so GitHub can eval
 The workflow was updated on both main and the migration branch to use android-actions/setup-android@v4 and explicitly request only platform-tools. The action documentation confirms that the old tools package is no longer served and that platform-tools is the supported package default. The updated workflow commit on the migration branch is ac5f1727cd145557823350dbebb968b1ac25497d.
 
 A post-fix workflow run has not yet been returned by the available GitHub workflow-run query. Therefore the fix is committed but not yet verified by a successful CI run.
+
+
+## Second CI attempt — 2026-10-31
+
+- Workflow run: 41198164798
+- SDK setup: passed after switching to setup-android@v4 and requesting platform-tools only.
+- Gradle setup: passed.
+- Java compilation: failed in HostProfile.java because the Xposed API 82 LoadPackageParam does not expose versionName/versionCode.
+- Corrective source change: host version metadata is now read from PackageManager after Application.attach; the early load-package log records only package/process.
+- Fix commits: 35fbb74a1d8d996cec039875a801dfed412f25d6 and 8f889b441a940bef76972cc8d9dc341e3d855624.
+- A post-fix build is still required. No APK is available from this failed run.
