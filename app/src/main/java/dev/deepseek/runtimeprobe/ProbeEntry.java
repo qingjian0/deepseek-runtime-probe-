@@ -47,7 +47,7 @@ public final class ProbeEntry implements IXposedHookLoadPackage {
 
     private static void installCandidates(ClassLoader loader) {
         if (!CANDIDATES_INSTALLED.compareAndSet(false, true)) return;
-        SafeTrace.event("host_profile", HostProfile.fromApplication(loader));
+        SafeTrace.event("host_profile", HostProfile.fromApplication(application));
         hookNamedMethods(loader, "rx3", "g");
         hookNamedMethods(loader, "h60", "b");
         hookNamedMethods(loader, "nw1", "j");
